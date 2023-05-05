@@ -1,0 +1,259 @@
+
+.portfolio-section {
+    background-image: linear-gradient(to right, #0c0c0c, #9c0f0f);
+}
+
+
+.common-section {
+    padding: 9rem 5rem 10rem 5rem;
+    display: flex;
+    flex-direction: column;  
+}
+
+.common-section > header {
+text-align: left;
+display: flex;
+flex-direction: column;
+margin-bottom: 3rem;
+text-align: center;
+align-items: center;
+font-family: 'Montserrat', sans-serif;
+}
+.common-section > header > h1 {
+  font-size: 55px;
+letter-spacing: 0.10rem;
+ 
+  font-weight: 500;
+  color: #dfdfdf;;
+  position: relative;
+  text-transform: uppercase;
+
+  padding-bottom: 0.2rem;
+  margin-bottom: 1rem;
+ 
+}
+
+.common-section > header > h1 > span {
+    color: transparent;
+-webkit-text-stroke: 1px rgb(204, 13, 13);
+opacity: .8;
+
+}
+.common-section > header > p {
+  font-family: 'Montserrat', sans-serif;
+font-size: 18px;
+font-weight: 500;
+letter-spacing: 0.1rem;
+max-width: 40rem;
+line-height: 1.4em;
+color: #dfdfdf;
+}
+.common-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+justify-content: center;
+
+}
+.common-thumbnail {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  margin: 10px;
+  transition: 0.1s;
+  border: 5px solid #292929;
+  border-radius: 18px; /*IMPORTANT*/
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+  
+}
+.blurhash {
+  z-index: 20;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+}
+.thumbnail-img {
+    width: 100%;
+    object-fit: contain;
+  
+    height: 100%;
+    display: block;
+    border-radius: 13px;
+   
+   
+}
+
+
+.common-thumbnail > .thumbnail-img,
+.common-thumbnail > .content {
+  transition: 200ms ease-in-out;
+  border-radius: 13px;
+}
+
+
+.common-thumbnail:hover > img.blur {
+    filter: blur(5px);
+  }
+  
+  .common-thumbnail:hover > img.gray {
+    filter: grayscale(1);
+  }
+  
+  .common-thumbnail:hover > img.zoom {
+    transform: scale(1.1);
+  }
+  
+  .common-thumbnail > .content.fade {
+    opacity: 0;
+  }
+  .common-thumbnail:hover > .content.fade {
+    opacity: 1;
+  }
+  
+  .common-thumbnail:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+  
+
+  .common-thumbnail .thumbnail-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 13px;
+  }
+  
+  .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    
+    background-color: rgba(75, 27, 27, 0.7);
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    gap: 0.5rem;
+  }
+  .content > span {
+    background-color: rgba(216, 30, 30, 0.3);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100%;
+  }
+  .fade:hover .content {
+    opacity: 1;
+  }
+  
+  .image-viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+  }
+  
+  .image-viewer img {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+    position: absolute;
+    top: 2rem;
+    border-radius: 13px;
+    
+  }
+  
+  .image-viewer button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: rgb(160, 22, 22, 0.829);
+    font-family: 'Oswald', sans-serif;
+    border-radius: 4px;
+    color: #dddddd;
+    letter-spacing: 0.12REM;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .image-viewer button:hover {
+    
+    transform: scale(1.1);
+    
+  }
+  
+
+  @media (max-width: 768px) {
+    .common-section {
+      padding: 9rem 2rem 10rem 2rem;
+    }
+  
+    .common-section > header > h1 {
+      font-size: 45px;
+      line-height: 1.2em;
+      border: none;
+    }
+  
+    .common-section > header > p {
+      font-size: 16px;
+      max-width: 100%;
+    }
+  
+    .common-thumbnail {
+      
+      height: 16rem;
+      width: 400px;
+      min-width: 250px;
+    }
+  
+    .common-thumbnail > img {
+      height: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    
+    .common-section {
+      padding: 9rem 1rem 10rem 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .-section > header > h1 {
+      font-size: 35px;
+      line-height: 1.1em;
+      border: none;
+    }
+  
+    .common-section > header > p {
+      font-size: 14px;
+      max-width: 100%;
+    }
+  
+    .common-thumbnail {
+      width: 280px;
+      height: 12rem;
+    }
+    
+  }
+  
+
+  

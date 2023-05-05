@@ -1,0 +1,96 @@
+.aftercare-section {
+    background: rgb(17, 17, 17);
+
+   
+}
+
+.aftercare-main-section {
+    position: relative;
+    background: rgb(17, 17, 17);
+    padding: 10rem 0 8rem 0;
+    background-image: url('../../../assets/images/aftercare-bg.jpg');
+    object-fit: contain;
+background-position: bottom;
+background-attachment: scroll;
+
+font-family: 'Lato', sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 1.5rem;
+
+
+}
+
+.aftercare-main-section::before {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.95);
+    background-color: rgba(0, 0, 0, 0.95); 
+   
+}
+.aftercare-main-section > h1 {
+    color: white;
+    font-size: 3rem;
+    z-index: 2;
+    font-weight: 600;
+    border-bottom: 1px solid  rgb(85, 85, 85);
+    padding-bottom: 0.35rem;
+    letter-spacing: 4px;
+    color: rgb(182, 182, 182);
+}
+.aftercare-main-section > div {
+    z-index: 2;
+    display: flex;
+    gap: 4rem;
+}
+.aftercare-main-section > div > span {
+    z-index: 2;
+padding: 1rem;
+display: flex;
+height: 7.6rem;
+justify-content: center;
+align-items: center;
+background-color: rgb(19, 19, 19);
+border-radius: 100%;
+}
+.aftercare-main-section > div > span > img {
+    width: 5rem;
+}
+#luckyzlinez-span {
+    width: 7rem;
+}
+#lucky-logo {
+  width: 4rem;
+}
+
+@media only screen and (max-width: 650px) {
+    
+    .aftercare-main-section > div > span {
+        z-index: 2;
+    padding: 0.8rem;
+   
+    }
+    .aftercare-main-section > div > span > img {
+        width: 3rem;
+    }
+    #luckyzlinez-span {
+        width: 4.5rem;
+    }
+    .aftercare-main-section > h1 {
+      
+        font-size: 2.3rem;
+
+    }
+    .aftercare-main-section > div > span {
+        z-index: 2;
+    height: 5rem;
+    }
+}
+

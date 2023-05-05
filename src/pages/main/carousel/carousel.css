@@ -1,0 +1,112 @@
+.carousel {
+    position: relative;
+ height: 550px;
+    margin: 0 auto;
+    display: flex;
+    object-fit: contain;
+    background-position: top;
+    background-attachment: scroll;
+    border-top-left-radius: 70px;
+  }
+  .carousel::before {
+    position: absolute;
+          content: '';
+          border-top-left-radius: 70px;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          z-index: -1;
+          background-image: linear-gradient( 115deg, rgba(5, 5, 5, 0.8), rgba(97, 0, 0, 0.7) ), url('../../../assets/images/bg-img-port4.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+     
+  }
+  
+.carousel::after {
+  position: absolute; /*IMPORTANT!*/
+  background-color: transparent;
+  content: "";
+  width: 100%;
+  height: 15px;
+  mix-blend-mode:exclusion;
+  bottom:1px;
+  left: 0;
+  z-index: 2;
+  transform: rotateX(0deg);
+  bottom: 0rem;
+
+}
+.carousel-status {
+  display: none;
+}
+  .carousel .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 100%;
+   
+   
+   
+   color: rgb(202, 202, 202);
+   
+    font-weight: bold;
+    text-align: center;
+  }
+.control-dots {
+  margin-bottom: 1.5rem;
+}
+.slide > p {
+  font-size: 1.3rem;
+ width: 60%;
+ margin-bottom: 2rem;
+ font-family: 'Farsan', sans-serif;
+ font-weight: 100;
+ font-style: italic;
+ color: rgb(202, 202, 202);
+}
+.slider-wrapper {
+  margin-bottom: 1rem;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  .slide
+  .slide > h1 {
+font-size: 1.9rem;
+font-family: 'Farsan', sans-serif;
+color: rgb(202, 202, 202);
+
+  }
+  @media only screen and (max-width: 1200px) {
+    .slide > p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    
+    }
+    
+    .carousel .slide {
+      height: 25rem;
+      
+  } 
+}
+  @media only screen and (max-width: 800px) {
+    .slide > p {
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+    
+    }
+    .slide .slide > h1 {
+      font-size: 1.2rem;
+      font-family: 'Farsan', sans-serif;
+      color: rgb(202, 202, 202);
+}
+.carousel::before { 
+  border-top-left-radius: 0px;
+}
+.carousel {
+  border-top-left-radius: 0px;
+}
+}

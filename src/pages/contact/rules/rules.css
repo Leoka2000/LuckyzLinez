@@ -1,0 +1,99 @@
+.contact-section {
+  background: rgb(17, 17, 17);
+    object-fit: contain;
+    
+    background-position: top;
+    background-attachment: scroll;
+   
+  }
+.rules-section {
+  display: flex;
+  justify-content: center;
+  color: rgb(218, 218, 218);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; /* Montserrat Medium */
+
+  padding-top: 10rem;
+}
+  .rules-section > main{
+    display: flex;
+flex-direction: column;
+gap: 2rem;
+align-items: center;
+background-color: rgb(44, 44, 44, 0.7);
+width: 50rem;
+padding: 2rem 2rem 2rem 2rem;
+border-radius: 15px;
+  }
+  .rules-section > main > h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+.rules-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+  .rules-text-wrapper > div {
+display: flex;
+gap: 1rem;
+align-items: center;
+  }
+  .rules-text-wrapper > div > span {
+padding: 0.6rem;
+font-size: 1.1rem;
+background-color: #bc9864;
+color: black;
+border-radius: 100%;
+  }
+  .rules-text-wrapper > div > p > a {
+    border-bottom: none;
+  }
+  .rules-text-wrapper > div > p {
+    width: 90%;
+   font-size: 1.1rem;
+  }
+
+
+  @media (max-width: 868px) {
+    .rules-section > main{
+      display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background-color: rgb(44, 44, 44, 0.7);
+  width: 35rem;
+  padding: 2rem 2rem 2rem 2rem;
+  border-radius: 15px;
+    }
+    .rules-text-wrapper {
+      
+      gap: 3rem;
+    }
+    .rules-text-wrapper > div > p {
+      width: 90%;
+     font-size: 1rem;
+    }
+  }
+  @media (max-width: 600px) {
+    .rules-section > main{ 
+      width: 30rem;
+    }
+    .rules-section > main > h1 {
+      font-size: 1.6rem;
+    
+    }
+    .rules-text-wrapper > div > p {
+      width: 90%;
+     font-size: 0.9rem;
+    }
+    .rules-text-wrapper > div > span {
+      padding: 0.5rem;
+      font-size: 1rem;
+      
+        }
+    
+    }
+
+  

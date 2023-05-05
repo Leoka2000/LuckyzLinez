@@ -1,0 +1,234 @@
+.navbar-renderer, .navbar-portfolio, .navbar-contact {
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    width: 100%;
+    z-index: 22;
+    font-family: 'Lato', sans-serif;
+}
+nav {
+    display: flex;
+    height: 85px;
+background-color: transparent;
+justify-content: space-between;
+align-items: center;
+width: 90%;
+
+
+
+}
+
+nav > a > img {
+width: 10rem;
+height: 8rem;
+margin-top: 4rem;
+filter:contrast(0.88);
+filter: brightness(0.8);
+
+
+
+}
+
+nav > ul {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    
+  
+}
+
+nav > ul > li {
+   list-style: none;
+   cursor: pointer;
+ 
+}
+nav > ul > li > a {
+    transition: 0.5s;
+    color: rgb(182, 182, 182);
+    
+}
+nav > ul > li > a:hover {
+    color: rgba(216, 30, 30, 0.829);
+    
+}
+.navbar-renderer ul li.active a,
+.navbar-portfolio ul li.active a,
+.navbar-contact ul li.active a {
+    color: rgba(216, 30, 30, 0.829);
+}
+
+.navbar-contact ul li a {
+    color: rgb(182, 182, 182);
+}
+.navbar-contact nav .navbar-icons-wrapper {
+    color: rgb(182, 182, 182);
+}
+.navbar-icons-wrapper {
+    display: flex;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    gap: 0.8rem;
+    justify-content: center;
+  
+   
+   
+}
+.navbar-icons-wrapper > a > svg {
+    transition: 0.4s;
+    color: rgb(182, 182, 182);
+}
+.navbar-icons-wrapper > a > svg:hover {
+    cursor: pointer;
+    color: rgba(216, 30, 30, 0.829);
+    transform: scale(1.25);
+}
+.bars-button {
+    position: fixed;
+    right: 10rem;
+    font-size: 2rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  
+    display: none;
+    color: white;
+}
+.close {
+    display: none;
+    
+}
+.mobile-logo {
+    position: absolute;
+    width: 5rem;
+    left: 1.5em;
+    top: 1.5rem;
+    font-size: 2rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    display: none;
+    
+}
+.white-bars {
+    display: none;
+    color: rgb(182, 182, 182);;
+   
+    
+}
+
+.black-bars {
+   display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+.white-bars {
+        position: absolute;
+        right: 1.5em;
+        top: 1.5rem;
+        font-size: 2rem;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        color:rgb(182, 182, 182);
+        display: flex;
+    }
+    .mobile-logo {
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        left: 2rem;
+        top: 1rem;
+        font-size: 2rem;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        color: white;
+        display: flex;
+    }
+    .responsive_nav > a > img {
+        margin-top: 0;
+    }
+    .black-bars {
+        color: rgb(182, 182, 182);
+        position: absolute;
+        right: 1.5em;
+        top: 1.5rem;
+        font-size: 2rem;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+    }
+    .close { 
+        position: absolute;
+		top: 1.5rem;
+		right: 1.5rem;
+        color: rgb(182, 182, 182);
+        background: transparent;
+	border: none;
+	outline: none;
+    display: flex;
+    font-size: 1.7rem;
+    cursor: pointer;
+    
+     }
+    .responsive_nav{
+		transform: none;
+        display: flex;
+        justify-content: flex-start;
+		width: 100%;
+        flex-direction:column-reverse;
+
+        background-image: linear-gradient(to right, #434343 0%, black 100%);
+       
+      
+	}
+    .responsive_nav > a {
+        padding-bottom: 5rem;
+
+    }
+    .responsive_nav > ul{
+		transform: none;
+        display: flex;
+        justify-content: flex-start;
+		width: 100%;
+        color: white;
+        
+       
+        flex-direction: column;
+	}
+    .responsive_nav > ul > li > a {
+        color: rgb(179, 179, 179);
+    }
+	nav {
+        position: fixed;
+		top: 0rem;
+		left: 0rem;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 2rem;
+        text-align: center;
+		padding-top: 5rem;
+		transition: 0.8s;
+		transform: translateY(-200vh); 
+        color: #677294;
+		/* IMPORTANTE */
+		background-color: rgb(206, 206, 206);
+        z-index: 50;
+	/* aqui que a magica acontece, esse é mt importante */ 
+	}
+}
