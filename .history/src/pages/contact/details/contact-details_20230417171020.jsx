@@ -37,9 +37,9 @@ const ContactDetails = () => {
             </span>
             <div>
               <h3>Address:</h3>
-              <p>970 st. Mary's road</p>
+              <p>2005 Portage Ave</p>
               <p>Winnipeg, Manitoba</p>
-              <p>R2N 4A2</p>
+              <p>R3J 0K3</p>
             </div>
           </div>
           <div className='contact-row'>
